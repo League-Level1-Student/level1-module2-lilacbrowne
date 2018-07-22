@@ -1,9 +1,20 @@
+
+
+
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2017
  *    Level 1
  */
 
 public class TeaMaker {
+public static void main(String[] args) {
+	TeaBag teabag = new TeaBag("Passion Fruit"); 
+	Kettle kettle = new Kettle(); 
+ kettle.boil();
+	Cup cup = new Cup(); 
+	cup.makeTea(teabag, kettle.getWater());
+	
+}
 
 	/* Figure out how to make a cup of tea using the classes below */
 
