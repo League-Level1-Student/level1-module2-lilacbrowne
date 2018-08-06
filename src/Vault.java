@@ -1,16 +1,18 @@
 
 public class Vault {
-	private int code;
-	Vault vault = new Vault();
+	private int code = 6;
+	
 
 	public static void main(String[] args) {
+		Vault vault = new Vault();
+vault.tryCode(6); 
+}
 
-	}
-
-	void tryCode(int x) {
+	boolean tryCode(int x) {
 		if (x == code) {
-			return;
+			return true;
 
 		}
+		return false;
 	}
 }
