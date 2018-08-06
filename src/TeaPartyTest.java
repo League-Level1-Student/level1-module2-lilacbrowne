@@ -12,10 +12,10 @@
 	       @Test
 	       public void test() {
 	               TeaParty teaParty = new TeaParty();
-	               String greeting = teaParty.welcome(null, false, false);
-	               assertEquals("Hello Ms. Austen", teaParty.welcome("Austen", true, false));
-	               assertEquals("Hello Mr. Orwell", teaParty.welcome("Orwell", false, false));
-	               assertEquals("Hello Sir Isaac Newton", teaParty.welcome("Isaac Newton", false, true));
+	               String greeting = teaParty.Welcome(null, false, false);
+	               assertEquals("Hello Ms. Austen", teaParty.Welcome("Austen", true, false));
+	               assertEquals("Hello Mr. Orwell", teaParty.Welcome("Orwell", false, false));
+	               assertEquals("Hello Sir Isaac Newton", teaParty.Welcome("Isaac Newton", false, true));
 	       }
 	}
 
