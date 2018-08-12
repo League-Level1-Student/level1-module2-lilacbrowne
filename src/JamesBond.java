@@ -1,16 +1,17 @@
 
 public class JamesBond {
- private int code;
- Vault vault = new Vault(); 
+	private int code;
+	
 
+	int findCode(Vault vault) {
+		for (int i = 0; i < 1000000; i++) {
 
- 
-void findCode(vault) {
-	if (0 < code < 1000000000) {
-		tryCode(x);
-		if (x==code) {
-			return code; 
+			if (vault.tryCode(i)) {
+				code = i; 
+				return code;
+			}
 		}
-	} else
-		return "-1"; 
- }
+				return -1;
+		
+	}
+}
